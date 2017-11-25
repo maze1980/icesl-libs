@@ -44,6 +44,6 @@ function spiral(id,od,turns,thickness)
 end
 
 if not pcall(getfenv, 4) then
-  emit(spiral(4,10,1.5,1),1)
+  emit(spiral(4,10,1.5,1))
 end
 
