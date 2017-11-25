@@ -49,4 +49,7 @@ function helix(od,id,rise,length)
  return merge(all)
 end
 
-emit(helix(10,7,6,24))
+
+if not pcall(getfenv, 4) then
+  emit(helix(10,7,6,24))
+end
