@@ -8,12 +8,12 @@
 
 
 --
---function coil(od,id,rise,length)
+--function helix(od,id,rise,length)
 --  od = outside diameter
 --  id = inside diameter
 --  rise
 --  length
-function coil(od,id,rise,length)
+function helix(od,id,rise,length)
  --error handling and preparation
  if od<1 then od=1 end
  if id<0 then id=0 end
@@ -49,4 +49,4 @@ function coil(od,id,rise,length)
  return merge(all)
 end
 
-emit(coil(10,7,6,24))
+emit(helix(10,7,6,24))
